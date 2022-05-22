@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="context-type" content="text/html";charset="utf-8">
+        <title>Movies </title>
+        <link rel="Stylesheet" href="C:\Users\BIDA21-003\Downloads\style.css">
+        <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+       <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <!--using fontAwesome-------------->
+        <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+       <!-- Link Swiper's CSS -->
+       <link rel="stylesheet"href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    </head>
+    <body>
+     <!--navigation---------->
+      <nav>
+           <!--logo------------>
+          <a href="Index.html" class="logo">
+             Movies<span>.HD</span>
+           </a>
+          <!--menu--btn--------------->
+          <input type="checkbox" class="menu-btn" id="menu-btn"/>
+          <label class="menu-icon" for="menu-btn">
+              <span class="nav-icon"></span>
+           </label>
+           <!--menu------------>
+          <ul class="menu">
+             <li><a href="Index.html">home</a></li>
+              <li><a href="movies.html">movies</a></li>
+              <li><a href="#">categories</a></li>
+               <li><a href="#">contact</a></li>
+               <li><a href="#">feedback</a></li>
+               <li><a href="Login form.html">login</a></li>
+           </ul>
+           <!--search-------------->
+           <div class="search">
+              <input type="text"  placeholder="Find your favourtie movie" class="search-input" requited/>
+              <!--search-icon-------------->
+                  <i class="fa fa-search"></i>
+           </div>
+       </nav>
+       <!--nav-end-->
+
+     <h3 class="heading">MOVIES</h3>
+
+      <div class="container">
+
+        <div class="main-video-container">
+            <div class="video">
+                <video src="C:\Users\BIDA21-003\Downloads\Video\Hollow Point.mp4" loop controls class="main-video" ></video> 
+                <h3 class="main-vid-title">01. Hallow Point</h3>
+            </div>
+       </div> 
+        <div class="video-list-container">
+            <div class="list">
+                <video src="C:\Users\BIDA21-003\Downloads\Video\Hollow Point.mp4" class="list-video" ></video> 
+                <h3 class="list-title">01. Hallow Point</h3>
+            </div>
+            <div class="list">
+                <video src="C:\Users\BIDA21-003\Downloads\Video\Hollow Point.mp4" class="list-video" ></video> 
+                <h3 class="list-title">02. Hallow Point</h3>
+            </div>
+            <div class="list">
+                <video src="C:\Users\BIDA21-003\Downloads\Video\Hollow Point.mp4" class="list-video" ></video> 
+                <h3 class="list-title">03. Hallow Point</h3>
+            </div>
+            <div class="list">
+                <video src="C:\Users\BIDA21-003\Downloads\Video\Hollow Point.mp4" class="list-video"></video> 
+                <h3 class="list-title">04. Hallow Point</h3>
+            </div>
+            <div class="list">
+                <video src="C:\Users\BIDA21-003\Downloads\Video\Hollow Point.mp4" class="list-video" ></video> 
+                <h3 class="list-title">05. Hallow Point</h3>
+            </div>
+            <div class="list">
+                <video src="C:\Users\BIDA21-003\Downloads\Video\Hollow Point.mp4" class="list-video" ></video> 
+                <h3 class="title">06. Hallow Point</h3>
+            </div>
+            <div class="list">
+                <video src="C:\Users\BIDA21-003\Downloads\Video\Hollow Point.mp4" class="list-video"></video> 
+                <h3 class="title">07. Hallow Point</h3>
+            </div>
+            <div class="list">
+                <video src="C:\Users\BIDA21-003\Downloads\Video\Hollow Point.mp4" class="list-video"></video> 
+                <h3 class="list-title">08. Hallow Point</h3>
+            </div>
+        </div>
+      </div>
+     <script>
+         let videoList = document.querySelectorAll('.video-list-container .list');
+
+         videoList.forEach(vid =>{
+             vid.onclick = () =>{
+                  videoList.forEach(remove =>{remove.classList.remove('active')});
+                  vid.classList.add('active');
+                  let src = vid.querySelector('.list-video').src;
+                  let title = vid.querySelector('.list-title').innerHTML;
+                   document.querySelector('.main-video-container .main-video').src = src;
+                  document.querySelector('.main-video-container .main-video').play();
+                  document.querySelector('.main-video-container .main-vid-title').innerHTML = title;
+                };
+           });
+       </script>
+    </body>
+</html>

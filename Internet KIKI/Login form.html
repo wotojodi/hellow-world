@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="context-type" content="text/html";charset="utf-8">
+        <title>Movies </title>
+        <link rel="Stylesheet" href="C:\Users\BIDA21-003\Downloads\style.css">
+        <!--using fontAwesome-------------->
+        <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+       
+    </head>
+    <body>
+        <!--navigation---------->
+      <nav>
+            <!--logo------------>
+           <a href="Index.html" class="logo">
+             Movies<span>.HD</span>
+           </a>
+           <!--menu--btn--------------->
+           <input type="checkbox" class="menu-btn" id="menu-btn"/>
+           <label class="menu-icon" for="menu-btn">
+               <span class="nav-icon"></span>
+            </label>
+            <!--menu------------>
+           <ul class="menu">
+              <li><a href="Index.html">home</a></li>
+              <li><a href="movies.html">movies</a></li>
+              <li><a href="#">categories</a></li>
+              <li><a href="#">contact</a></li>
+              <li><a href="#">feedback</a></li>
+              <li><a href="Login form.html">login</a></li>
+          </ul>
+          <!--search-------------->
+          <div class="search">
+              <input type="text"  placeholder="Find your favourtie movie" class="search-input" requited/>
+               <!--search-icon-------------->
+              <i class="fa fa-search" type="submit"></i>
+           </div>
+      </nav>
+      <!--nav-end-->
+     <div class="hero">
+         <div class="form-box">
+             <div class="button-box">
+                 <div id="btn"></div>
+                 <button type="button" class="toggle-btn" onclick="login()">Login</button>
+                 <button type="button" class="toggle-btn" onclick="register()">Register</button>
+             </div>
+             <div class="social-icons">
+                  <img src="fb logo.png">
+                 <img src="instagram.jpg">
+                 <img src="twitter logo.png">
+              </div>
+             <form id="login" class="input-group">
+                  <input type="text" class="input-field" placeholder="user Id" required>
+                  <input type="text" class="input-field" placeholder="Enter Password" required>
+                  <input type="checkbox" class="check-box"><span>Remember Password</span>
+                  <button type="submit" class="submit-btn">Login</button>
+              </form>
+              <form id="register" class="input-group">
+                  <input type="text" class="input-field" placeholder="user Id" required>
+                  <input type="email" class="input-field" placeholder="email Id" required>
+                  <input type="text" class="input-field" placeholder="Enter Password" required>
+                 <input type="checkbox" class="check-box"><span>I agree to the terms and conditions </span>
+                 <button type="submit" class="submit-btn">register</button>
+              </form>
+           </div>
+        </div>
+        <script>
+            var x = document.getElementById("login");
+            var y = document.getElementById("register");
+            var z = document.getElementById("btn");
+            function register(){
+                x.style.left = "-400px";
+                y.style.left = "50px";
+                z.style.left = "110px";
+            }
+            function login(){
+                x.style.left = "50px";
+                y.style.left = "450px";
+                z.style.left = "0px";
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="urf-8">
+      <meta http-equiv="="X-UA-Comptible" content="IE-edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Watch exciting Movie online </title>
+      <link rel="Stylesheet" href="C:\Users\BIDA21-003\Downloads\style.css">
+     <!--using fontAwesome-------------->
+     <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!--navigation---------->
+        <nav>
+            <!--logo------------>
+           <a href="Index.html" class="logo">
+             Movies<span>.HD</span>
+           </a>
+
+           <!--menu--btn--------------->
+           <input type="checkbox" class="menu-btn" id="menu-btn"/>
+            <label class="menu-icon" for="menu-btn">
+              <span class="nav-icon"></span>
+            </label>
+           <!--menu------------>
+            <ul class="menu">
+               <li><a href="Index.html">home</a></li>
+               <li><a href="movies.html">movies</a></li>
+              <li><a href="#">categories</a></li>
+               <li><a href="#">contact</a></li>
+               <li><a href="#">feedback</a></li>
+               <li><a href="#">upcoming</a></li>
+               <li><a href="Login form.html">login</a></li>
+            </ul>
+            <!--search-------------->
+           <div class="search">
+               <input type="text"  placeholder="Find your favourtie movie" class="search-input"/>
+               <!--search-icon-------------->
+               <i class="fa fa-search"></i>
+            </div>
+        </nav>
+        <section id="feedback">
+            <div class="feedback-container">
+                <form  id="my-form">
+                    <div class="form-group">
+                        <label for="First name">first name</label>
+                        <input type="text" id="first name" name="firstname" required/>
+                    </div>
+                   <div class="form-group">
+                      <label for="last name">last name</label>
+                      <input type="text" id="last name" name="lastname" required/>
+                   </div> 
+                   <div class="form-group">
+                      <label for="email">Email</label>
+                      <input type="email" id="email" name="email" required/>
+                   </div> 
+                   <div class="form-group">
+                       <label for="message">message</label>
+                       <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                   </div> 
+                   <button type="submit" onclick="closepopup()" >submit</button>
+                </form>
+                <div id="thank_you" style="display: none;">
+                    <p>Thanks for filling up the form!</p>
+                
+                </div>
+            </div>
+        </section>
+        <script>
+            let button =document.getElementById('button');
+            
+          </script>
+    </body>
+</html>
